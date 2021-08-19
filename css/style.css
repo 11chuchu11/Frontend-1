@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+section{
+    align-items: center;
+
+}
+
+.paginas{
+    display: block;
+}
