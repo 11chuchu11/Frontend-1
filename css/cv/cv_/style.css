@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;700&display=swap');
+
+*{
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+body{
+    background-color: black;
+    color: #f2f2f2;
+}
+
+h1, h2, li{
+    font-family: 'Times New Roman', Times, serif;   
+}
+
+header{
+    min-height: 10vh;
+    margin-bottom: 15vh;
+    background-color: black;
+    
+}
+
+header figure {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+}
+
+header figure img{
+    border-radius: 50%;
+    
+}
+
+header h1{
+
+    background-color: #898989;
+    color: #f2f2f2;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main{
+    
+    min-height: 60vh;
+}
+
+section{
+    padding: 10px 0px 10px 0px; 
+}
+
+section h2{
+    background-color: #898989;
+    color: #f2f2f2;
+    padding-left: 1%;
+}
+
+section li span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.formation ul , .work ul{
+    list-style: none;
+}
+
+footer{
+    display: flex;
+    align-content: center;
+    background-color: #898989;
+    min-height: 5vh;
+    justify-content: center;
+
+
+}
+
+footer span, footer a{
+    align-self: center;
+    margin: 10px;
+    text-decoration: none;
+}
+
+footer span{
+    color: #f2f2f2;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 50px;
+}
+
+footer i{
+    font-size: 3vh;
+    color: #f2f2f2;
+}
+/* .pop-up{
+    border-radius: 50px;
+    color: white;
+} */
+
+
+
