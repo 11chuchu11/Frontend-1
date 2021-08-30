@@ -223,7 +223,7 @@ main section:nth-of-type(2) div:nth-of-type(2) figure span:nth-of-type(2){
 }
 
 .middle-footer{
-    padding: 20px 50px 0px;
+    padding: 20px 50px 20px;
     background-color: #3C2313;
     display: flex;
 }
