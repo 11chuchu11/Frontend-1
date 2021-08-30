@@ -13,9 +13,9 @@ h1, h2, li{
 }
 
 header{
+    background-color: black;
     min-height: 10vh;
     margin-bottom: 15vh;
-    background-color: black;
     
 }
 

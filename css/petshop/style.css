@@ -1,0 +1,44 @@
+@import url('https://use.fontawesome.com/releases/v5.15.2/css/all.css');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header section.higher-header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh .5vw;
+}
+
+header section.higher-header ul{
+    display: flex;
+    
+}
+header section.higher-header ul li{
+    margin-right: 1vw;
+    list-style: none;
+}
+
+header section.lower-header {
+    background-color: #F0A83E;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+header section.lower-header ul{
+    display: flex;
+    align-items: center;
+}
+header section.lower-header ul li{
+    margin-right: 1vw;
+}
+
+main section:nth-of-type(1) {
+    background-image: url(./../../img/petshop/bowl-and-pet-daities-on-green-background\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 409px;
+}
