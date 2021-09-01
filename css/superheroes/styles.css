@@ -2,45 +2,53 @@
 
 *{
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
+body{
+    font-size: 20px;
+}
 .higher-header{
     background-color: #1CD1B0;
-    font-size: 15px;
-    height: 40px;
+    font-size: 1rem;
+    line-height: 3vh;
     padding: 10px;
 }
 
-.lower-header{
+header{
     align-items: center;
     background-color: #00669F;
     display: flex;
-    height: 101px;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    
 
 }
 .lower-header span{
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 3rem;
     margin-left: 20px;
 }
 
 main{
     align-items: center;
     display: flex;
+    height: 90vh;
     justify-content: space-around;
-    height: 900px;
 }
 
 .box{
-    border: 1px solid red;
-    min-height: 88%;
-    width: 28vw;
+    background-color: #F3F3F3;
+    /* border: 1px solid red; */
+    height: 80%;
+    width: 20vw;
 }
 
 .box .banner{
     height: 40%;
     position: relative;
+    /* width: 20%; */
 
 }
 
@@ -51,55 +59,60 @@ main{
     width: 100%;
 }
 .box .banner i{
-    bottom: 75%;
     color: red;
-    font-size: 2rem;
-    left: 4%;
+    font-size: 2.5rem;
+    right: 85%;
     position: absolute;
+    top: 10%;
 }
 
 .box div:nth-of-type(2) {
-    align-items: center;
-    background-color: #F3F3F3;
     display: flex;
     flex-direction: column;
     height: 60%;
+    align-items: center;
+    padding:  10%;
     position: relative;
 
 }
 .box div:nth-of-type(2) img{
     border-radius: 50%;
-    height: 40%;
+    bottom: 86%;
+    height: 35%;
     position: absolute;
-    top: -19%;
-    /* width: 35%; */
+
 }
 
 .box div:nth-of-type(2) h2{
-    margin-top: 10vh;
-    font-size: 2.5rem;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 15% 0 0 0;
 }
 
 .box div:nth-of-type(2) p{
-    font-size: 1.2rem;
-    margin: 1vh 4vw 0;
-    text-align: justify;
+    font-size: 16px;
+    line-height: 18.75px;
 
 }
 .box div:nth-of-type(2) button{
     background-color: #00669F;
     border: 0;
-    color: #fff;
-    font-size: 1.2rem;
-    height: 80px;
-    margin: 3.5vh 0 3.5vh 0;
-    width: 30%;
+    border-radius: 10px;
+    color: #F3F3F3;
+    height: 15%;
+    justify-self: end;
+    position: absolute;
+    top: 74%;
+    width: 35%;
 }
 
 
 footer {
     background-color: #00669F;
-    color: #fff;
-    font-size: 2.5rem;
-    padding: 15px;
+    padding: 16px;
+}
+
+footer span{
+    color: #FFF9F9;
+    font-size: 16px;
 }
