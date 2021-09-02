@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #E5E5E5;
+
+}
+header{
+    background-color: #222222;
+    color: #F3F3F3;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+}
+.logo{
+    align-items: center;
+    display: flex;
+    font-size: 24px;    
+    font-weight: 700;
+}
+
+.logo .logo-name{
+    margin: 36px 0;
+}
+
+.logo .logo-name span:nth-of-type(1){
+    color: #3ab14b;
+}
+.logo .logo-name span:nth-of-type(2){
+    color: #fc200c;
+}
+
+.header-menu{
+    align-items: center;
+    display: flex;
+    list-style: none;
+    margin-right: 15px;
+}
+.header-menu li{
+    margin: 0 5px;
+    
+}
+.header-menu li a{
+    color: #F3F3F3;
+    text-decoration: none;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+    position: fixed;
+    right: 25%;
+    top: 25%;
+}
+.left-banner{
+    height: 350px;
+    background-image: url(./../../img/pizzeria/delivery.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 490px;
+}
+.left-banner h2{
+    color: #F3F3F3;
+    margin-left: 22px;
+    margin-top: 26px;
+}
+
+.left-banner h2 span{
+    color: #fc200c;
+}
+
+.right-banner{
+    background-color: #FFF;
+    height: 350px;
+    width: 490px;
+    
+}
+
+.right-banner h2{
+    color: #fc200c; 
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 58px;
+    margin-top: 26px;
+    text-align: center;
+}
+
+.right-banner .right-banner-sections{
+    display: grid;
+    grid-template: 20px 1fr/ 1fr 1fr ;
+    grid-template-areas:  "subtitle image" "list image";
+    height: auto;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+
+.right-banner .right-banner-sections h3{
+    font-size: 20px;
+    grid-area: subtitle;
+    text-align: center
+
+}
+
+.right-banner .right-banner-sections ul{
+    font-size: 16px;
+    font-weight: 700;
+    grid-area: list;
+    line-height: 1.5rem;
+    list-style: none;
+    margin-left: 51px;
+    margin-top: 20px;
+}
+
+.right-banner .right-banner-sections figure{
+    align-self: center;
+    grid-area: image;
+    height: 92px;
+    justify-self: center;
+    width: 129px;
+}
+
+.right-banner .right-banner-sections figure img{
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    background-color: #222222;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+}
+
+footer .footer-menu{ 
+    display: flex;
+    flex-direction: column;
+    line-height: 45px;
+    list-style: none;
+    margin-left: 50px;
+}
+
+footer .footer-menu li:nth-of-type(1){
+    order: 0;
+}
+footer .footer-menu li:nth-of-type(2){
+    order: 2;
+}
+footer .footer-menu li:nth-of-type(3){
+    order: 3;
+}
+footer .footer-menu li:nth-of-type(4){
+    order: 1;
+}
+
+
+footer .footer-menu li a{
+    color: #F3F3F3;
+    text-decoration: none;
+}
+

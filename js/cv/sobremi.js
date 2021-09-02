@@ -1,5 +1,3 @@
-
-
 Swal.fire({
     text: 'tocá sobre mi foto para ir al cv o sobre "chuchu" para ir a la pagina principal',
     // background: '#000',
@@ -9,3 +7,6 @@ Swal.fire({
     //     popup: 'pop-up'
     // }
 })
+
+
+
