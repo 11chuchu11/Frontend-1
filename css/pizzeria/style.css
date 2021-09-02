@@ -141,6 +141,8 @@ main{
 footer{
     background-color: #222222;
     bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     left: 0;
     position: fixed;
     right: 0;
@@ -151,7 +153,7 @@ footer .footer-menu{
     flex-direction: column;
     line-height: 45px;
     list-style: none;
-    margin-left: 50px;
+    padding-left: 50px;
 }
 
 footer .footer-menu li:nth-of-type(1){
@@ -171,5 +173,10 @@ footer .footer-menu li:nth-of-type(4){
 footer .footer-menu li a{
     color: #F3F3F3;
     text-decoration: none;
+}
+
+footer .logo{
+    justify-self: flex-end;
+    padding-right: 50px;
 }
 
