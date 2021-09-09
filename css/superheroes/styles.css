@@ -1,118 +1,181 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.15.2/css/all.css');
+
+
 
 *{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
-}
+    padding: 0;}
 body{
-    font-size: 20px;
-}
-.higher-header{
-    background-color: #1CD1B0;
-    font-size: 1rem;
-    line-height: 3vh;
-    padding: 10px;
+    width: 100vw;
 }
 
-header{
-    align-items: center;
-    background-color: #00669F;
-    display: flex;
-    height: 10vh;
+.higher-header{
+    /* height: 30px; */
+    background-color: #D1891C;
+    line-height: 1.5rem;
+    text-indent: 1rem;
+    width: 100vw;
+
+}
+
+.higher-header span{
+    font-size: 14px;
+}
+
+header {
+    background-color:  #00669F;
+    color: #fff;
+    font-size: 1.25rem;
+    text-indent: 1rem;
+    line-height: 3rem;
     position: sticky;
     top: 0;
+    z-index: 1;
     
-
-}
-.lower-header span{
-    font-size: 3rem;
-    margin-left: 20px;
 }
 
 main{
-    align-items: center;
     display: flex;
-    height: 90vh;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
-.box{
+.box {
+    /* border: solid red 1px; */
+    height: 489.2px;
+    margin: 20px 0;
+    max-width: 60vw;
     background-color: #F3F3F3;
-    /* border: 1px solid red; */
-    height: 80%;
-    width: 20vw;
+    
+    
 }
 
 .box .banner{
-    height: 40%;
     position: relative;
-    /* width: 20%; */
-
 }
 
 .box .banner img{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 100%;
+    border-radius: 10px 10px 0% 0%;
     width: 100%;
 }
-.box .banner i{
-    color: red;
-    font-size: 2.5rem;
-    right: 85%;
+
+.box .banner .fa-heart{
+    color:#CC2424;
+    font-size: 1.5rem;
     position: absolute;
-    top: 10%;
+    left: 1rem;
+    top: 1rem;
 }
 
-.box div:nth-of-type(2) {
+.box div:nth-of-type(2){
     display: flex;
     flex-direction: column;
-    height: 60%;
     align-items: center;
-    padding:  10%;
+    padding-top: 50px;
     position: relative;
-
+    
+    
 }
-.box div:nth-of-type(2) img{
-    border-radius: 50%;
-    bottom: 86%;
-    height: 35%;
-    position: absolute;
 
+.box div:nth-of-type(2) figure{
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    height: 90px;
+    position: absolute;
+    top:-50px;
+    /* margin: 0 25% 0 25%; */
+    width: 90px;
+}
+
+.box:nth-of-type(1) div:nth-of-type(2) figure{
+    background-image: url('./../../img/superheroes/batman.jpg');
+    
+}
+.box:nth-of-type(2) div:nth-of-type(2) figure{
+    background-image: url('./../../img/superheroes/harley.jpg');
+    
+}
+
+.box:nth-of-type(3) div:nth-of-type(2) figure{
+    background-image: url('./../../img/superheroes/mujerMaravilla.jpg');
+    
+}
+
+.box:nth-of-type(4) div:nth-of-type(2) figure{
+    background-image: url('./../../img/superheroes/superman.jpg');
+    
 }
 
 .box div:nth-of-type(2) h2{
-    font-size: 30px;
     font-weight: 400;
-    margin: 15% 0 0 0;
+    /* margin-top: 15%; */
+    margin-bottom: 2.5%;
+    text-transform: uppercase;
+    
 }
 
 .box div:nth-of-type(2) p{
-    font-size: 16px;
-    line-height: 18.75px;
-
+    font-size: .7rem;
+    text-align: justify;
+    margin: 0 20px 20px 20px;
 }
+
 .box div:nth-of-type(2) button{
     background-color: #00669F;
     border: 0;
-    border-radius: 10px;
-    color: #F3F3F3;
-    height: 15%;
-    justify-self: end;
-    position: absolute;
-    top: 74%;
-    width: 35%;
-}
-
-
-footer {
-    background-color: #00669F;
-    padding: 16px;
-}
-
-footer span{
+    border-radius: 5px;
     color: #FFF9F9;
-    font-size: 16px;
+    height: 45px;
+    margin-bottom: 20px;
+    width: 120px;
 }
+
+footer{
+    position: relative;
+    background-color: #00669F;
+    color: #FFF9F9;
+    font-size: .7rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+footer i{
+    color: #FFF9F9;
+    font-size: 2rem;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+
+/*------------------------- a partir de 481 px -------------------------*/
+
+@media screen and (min-width: 702px){
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .box{
+        max-width: 40vw;
+        
+    }
+
+    .box .banner {
+        height: 200px;
+    }
+    .box .banner img{
+        height: 100%;
+    }
+    .box div:nth-of-type(2) p{
+        min-height: 98px;
+    }
+}
+
+
