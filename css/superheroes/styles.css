@@ -2,22 +2,21 @@
 @import url('https://use.fontawesome.com/releases/v5.15.2/css/all.css');
 
 
-
 *{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;}
+    padding: 0;
+}
 body{
-    width: 100vw;
 }
 
 .higher-header{
     /* height: 30px; */
-    background-color: #D1891C;
+    background-color: #1CD1B0;
     line-height: 1.5rem;
     text-indent: 1rem;
-    width: 100vw;
+    /* width: 100vw; */
 
 }
 
@@ -37,11 +36,44 @@ header {
     
 }
 
+.user-header{
+    background-color: #001D2D;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.user-header .user-header-item {
+    line-height: 2rem;
+    margin-right: 20px;
+    
+}
+.user-header .user-header-item a{
+    color: #fff;
+    text-decoration: none;
+}
+
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: visible;
     
+}
+
+.newHero-form{
+    position: fixed;
+    right: 30px;
+}
+
+.newHero-form .button-form{
+    background-color: #00669F;
+    border: none;
+    padding: 20px;
+    border-radius: 50%;
+}
+.newHero-form .button-form .fa-plus{
+    color: #fff;
+    font-size: 2rem;
 }
 
 .box {
@@ -136,21 +168,15 @@ main{
 }
 
 footer{
-    position: relative;
     background-color: #00669F;
     color: #FFF9F9;
-    font-size: .7rem;
+    font-size: 1.2rem;
     line-height: 3rem;
+    position: sticky;
     text-align: center;
+    bottom: 0;
 }
 
-footer i{
-    color: #FFF9F9;
-    font-size: 2rem;
-    position: absolute;
-    top: 15%;
-    right: 5%;
-}
 
 /*------------------------- a partir de 481 px -------------------------*/
 
@@ -174,6 +200,7 @@ footer i{
         height: 100%;
     }
     .box div:nth-of-type(2) p{
+        font-size: 1.2rem;
         min-height: 98px;
     }
 }

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.15.2/css/all.css');
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;}
+body{
+    width: 100vw;
+    /* overflow: hidden; */
+}
+
+.higher-header{
+    display: none;
+
+}
+
+header {
+    background-color:  #00669F;
+    color: #fff;
+    font-size: 2rem;
+    text-indent: 1rem;
+    line-height: 5rem;
+    /* position: sticky; */
+    top: 0;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    margin: auto;
+    /* border: red solid 1px; */
+}
+
+.contact .title{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.contact .name-input, .email-input{
+    border: #000 solid 1.5px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    height: 3.5rem;
+    margin-bottom: 40px;
+    padding-left: 30px;
+}
+
+
+
+.contact .buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.contact .button-submit, .button-reset{
+    border: 0;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+    width: 50%;
+}
+
+.contact .button-submit{
+    background-color: #1CD1B0;
+}
+
+.contact .button-reset{
+    background-color: #888888;
+    color: #fff;
+}
+
+footer{
+    position: fixed;
+    background-color: #00669F;
+    bottom: 0;
+    color: #FFF9F9;
+    font-size: 1.2rem;
+    left: 0;
+    line-height: 3rem;
+    right: 0;
+    text-align: center;
+}
+

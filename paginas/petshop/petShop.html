@@ -7,125 +7,124 @@
     <link rel="stylesheet" href="./../../css/petshop/style.css">
     <title>PetShop</title>
   </head>
+
   <body>
+    <section class="higher-header">
+      <p>Grandes ofertas en comederos</p>
+      <ul class="country-controller">
+        <li>Español</li>
+        <li>ARG$</li>
+      </ul>
+    </section>
     <header>
-      <section class="higher-header">
-        <p>Grandes ofertas en comederos</p>
-        <ul>
-          <li>Español</li>
-          <li>ARG$</li>
-        </ul>
-      </section>
       <section class="lower-header">
-        <figure>
+        <figure class="logo-container">
           <img src="./../../img/petshop/LogoCatDo.png" alt="logo" />
         </figure>
-        <ul type="none">
-          <li><i class="fas fa-paw"></i>Categorias</li>
-          <li><i class="fas fa-paw"></i>Pets</li>
-          <li><i class="fas fa-paw"></i>Nosotros</li>
-          <li><i class="fas fa-paw"></i>Contactanos</li>
+        <i class="fas fa-bars"></i>
+        <ul type="none" class="menu-header">          
+          <li class="menu-header-item category"><a href=""><i class="fas fa-paw"></i>Categorias </a></li>
+          <li class="menu-header-item pets"><a href=""><i class="fas fa-paw"></i>Pets </a></li>
+          <li class="menu-header-item us"><a href=""><i class="fas fa-paw"></i>Nosotros</a></li>
+          <li class="menu-header-item contact"><a href=""><i class="fas fa-paw"></i>Contactanos</a></li>
         </ul>
       </section>
     </header>
     <main>
-      <section>
-        <div>
-          <h3>¡Es un placer tener aquí!</h3>
-          <p>¡Comederos en descuento!</p>
-          <button>Comederos</button>
+      <section class="banner">
+        <div class="banner-welcome">
+          <h3 class="banner-title">¡Es un placer tener aquí!</h3>
+          <p class="banner-subtitle">¡Comederos en descuento!</p>
+          <button class="banner-button">Comederos</button>
         </div>
       </section>
-      <section>
-        <div>
-          
+      <section class="products">
+        <div class="featured-products-description">
           <i class="fas fa-paw"></i>
-          <h2>Productos Destacados</h2>
-          <nav>
-            <ul>
-              <li><a href="">Comederos</a></li>
+          <h2 class="featured-products-description-title">Productos Destacados</h2>
+          <nav class="featured-products-description-options">
+            <ul class="featured-products-description-options-list">
+              <li><a href="" class="featured-products-description-options-list-link">Comederos</a></li>
               <span>-</span>
-              <li><a href="">Accesorios</a></li>
+              <li><a href="" class="featured-products-description-options-list-link">Accesorios</a></li>
               <span>-</span>
-              <li><a href="">Comida</a></li>
+              <li><a href="" class="featured-products-description-options-list-link">Comida</a></li>
             </ul>
           </nav>
         </div>
-        <div>
-          <figure>
+        <div class="products-presentation">
+          <figure class="product-container">
             <img src="./../../img/petshop/churrasquito.png" alt="carne" />
-            <span>Juguete Churrasquito</span>
-            <span>$150</span>
+            <span class="product-name">Juguete Churrasquito</span>
+            <span class="product-price">$150</span>
           </figure>
-          <figure>
+          <figure class="product-container">
             <img src="./../../img/petshop/comedero.png" alt="comedero" />
-            <span>comedero para Perro</span>
-            <span>$250</span>
+            <span class="product-name">comedero para Perro</span>
+            <span class="product-price">$250</span>
           </figure>
-          <figure>
+          <figure class="product-container">
             <img src="./../../img/petshop/Huesito.png" alt="huesitos" />
-            <span>Juguete Huesito</span>
-            <span>$650</span>
+            <span class="product-name">Juguete Huesito</span>
+            <span class="product-price">$650</span>
           </figure>
         </div>
       </section>
-      <form class="contact">
-        <h2>Contáctanos</h2>
-        <div>
-          <input type="text" placeholder="Nombre y Apellido">
-          <input type="text" placeholder="Ingresá tu correo electrónico">
-          <input type="text" placeholder="Teléfono">
+      <form class="contact-forms" action="" method="GET">
+        <h2 class="contact-title">Contáctanos</h2>
+        <div class="container-inputs-forms">
+          <input class="input-forms name-input" type="text" name="name" placeholder="Nombre y Apellido">
+          <input class="input-forms email-input" type="email" name="email" placeholder="Ingresá tu correo electrónico">
+          <input class="input-forms phone-input" type="tel" name="phone" placeholder="Teléfono">
         </div>
-        <div>
-          <input type="button" value="Resetear">
-          <input type="button" value="Enviar">
+        <div class="container-buttons-forms">
+          <input class="button-forms reset-button-contact-forms" type="reset" value="Resetear">
+          <input class="button-forms submit-button-contact-forms" type="submit" value="Enviar">
         </div>
       </form>
     </main>
     <footer>
       <section class="higher-footer">
-        <span>
-          <i class="fas fa-envelope"></i>
-          sucríbete para más novedades
+        <span class="subscription-title-footer">
+          <i class="fas fa-envelope "></i>
+          <span>sucríbete para más novedades</span>
         </span>
-        <form action="">
+        <form class="subscription-footer-section" action=""  >
           <input type="text" name="" id="email-box" placeholder="Ingresá tu correo electrónico">
           <input type="button" value="Suscribirme" id="email-button">
         </form>
       </section>
       <section class="middle-footer">
-        <div class="middle-footer-left" >
-          <div>
-            <i class="fas fa-map-marker-alt"></i>
-            <div>
-              <p>Localidad</p>
-              <span>Calle - provincia</span>
-            </div>
-          </div>
-          <div>
-            <i class="fas fa-phone-alt"></i>
-            <div>
-              <p>Teléfono</p>
-              <span>Número de teléfono</span>
-            </div>
-          </div>
-          <div>
-            <i class="fas fa-envelope"></i>
-            <div>
-              <p>Correo Electrónico</p>
-              <span>Dirección de correo</span>
-            </div>
-          </div>
-        </div>
         <div class="middle-footer-right">
           <figure>
             <img src="./../../img/petshop/LogoWhite.png" alt="">
           </figure>
         </div>
+        <div class="middle-footer-left" >
+          <div class="footer-information">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="footer-information-item-description">
+              <p>Localidad</p>
+              <span>Calle - provincia</span>
+            </div>
+          </div>
+          <div class="footer-information">
+            <i class="fas fa-phone-alt"></i>
+            <div class="footer-information-item-description">
+              <p>Número de teléfono</p>
+              <span>Número de teléfono</span>
+            </div>
+          </div>
+          <div class="footer-information footer-email-information">
+            <i class="fas fa-envelope"></i>
+            <div class="footer-information-item-description">
+              <p>Correo Electrónico</p>
+              <span>Dirección de correo</span>
+            </div>
+          </div>
+        </div>
       </section>
-
-
-      <p >Todos los derechos reservados Front End</p>
+      <p class="lower-footer">Todos los derechos reservados Front End</p>
     </footer>
   </body>
 </html>

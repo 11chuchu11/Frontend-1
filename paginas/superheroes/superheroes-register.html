@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="./../../css/superheroes/register.css">
+    <title>Super Heroes</title>
+</head>
+<body>
+    <section class="higher-header"><span>Descuentos 20%</span></section>
+    <header>
+        <section class="lower-header"><span>Card Super Heroes</span></section>
+    </header>
+    <main>
+        <form class="register" action="superheroes-login.html" method="GET">
+            <h2 class="title">Registro</h2>
+            <input class="name-input" type="text" name="name" placeholder="Nombre y apellido">
+            <input class="email-input" type="email" name="email" placeholder="Correo Electrónico">
+            <input class="password-input" type="password" name="user" placeholder="Contraseña">
+            <select name="country" id="country">
+                <option value="" >Pais</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Brazil">Brazil</option>
+            </select>
+            <div class="buttons">
+                <button class="button-reset" type="reset" value="reset">Borrar</button>
+                <button class="button-submit" type="submit" value="send">Entrar</button>
+            </div>
+            <span class="login" >
+                <span class="login-word">¿Ya tenés una cuenta?</span>
+                <a href="superheroes-login.html" class="login-link">Ingresá</a> 
+            </span>
+        </form>
+    </main>
+<footer>
+        <span>Todos los derechos reservados a FRONT END 1</span>
+    </footer>
+</body>
+</html>
