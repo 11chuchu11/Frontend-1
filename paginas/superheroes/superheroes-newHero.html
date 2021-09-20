@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="./../../css/superheroes/superheroes-newHero.css">
+    <title>Super Heroes</title>
+</head>
+<body>
+    <header>
+        <section class="lower-header"><span>Card Super Heroes</span></section>
+    </header>
+    <main>
+        <section class="new-hero-container">
+            <div class="description-container">
+                <h2 class="title">AñadÍ tu super</h2>
+                <p>Agrega a tu personaje favorito completando las opciones</p>
+            </div>
+            <form class="new-hero" action="superheroes.html" method="GET">
+                <div class="name-container">
+                    <label for="name-input">*Nombre</label>
+                    <input id="name-input" type="text" name="name" placeholder="Nombre">
+                </div>
+                <div class="kind-container">
+                    <label for="kind">*Especie</label>
+                    <input id="kind" type="text" name="kind" placeholder="Especie">
+                </div>
+                <div class="date-container">
+                    <label for="date">*Fecha</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div class="add-photo">
+                    <label for="photo">*Agregar Foto</label>
+                    <label for="photo" class="modifier-photo">
+                        <span>Seleccionar archivo</span>
+                        <input type="file" name="photo" id="photo" accept="image/png, image/jpeg">
+                    </label>
+                </div>
+                <div class="powers-container">
+                    <p>Poderes</p>
+                    <label for="power-1" class="power-container power1-container">
+                        <input type="checkbox" name="power-1" id="power-1">
+                        Volar
+                    </label>
+                    <label for="power-2" class="power-container power2-container">
+                        <input type="checkbox" name="power-2" id="power-2">
+                        SuperInteligencia
+                    </label>
+                    <label for="power-3" class="power-container power3-container">
+                        <input type="checkbox" name="power-3" id="power-3">
+                        Vista de rayo láser
+                    </label>
+                    <label for="power-4" class="power-container power4-container">
+                        <input type="checkbox" name="power-4" id="power-4">
+                        Billetera gorda
+                    </label>
+                    <hr>
+                </div>
+                <div class="new-character">
+                    <p>Tipo de personaje</p>
+                    <label for="hero" class="hero-container">
+                        <input type="radio" name="character" id="hero">
+                        Héroe / Heroina
+                    </label>
+                    <label for="villain" class="villain-container">
+                        <input type="radio" name="character" id="villain">
+                        Villano / Villana
+                    </label>
+                </div>
+                <textarea name="comment-input" id="description-input" cols="1" rows="15" placeholder="Descripción" ></textarea>
+                <div class="buttons">
+                    <button class="button-submit" type="submit" value="add">Añadir</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer >
+        <span>Todos los derechos reservados a FRONT END 1</span>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.15.2/css/all.css');
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;}
+body{
+    width: 100vw;
+    /* overflow: hidden; */
+}
+
+
+header {
+    background-color:  #00669F;
+    color: #fff;
+    font-size: 2rem;
+    text-indent: 1rem;
+    line-height: 5rem;
+    /* position: sticky; */
+    top: 0;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border:  1px red solid;
+}
+
+
+.new-hero-container{
+    background-color: #00669F;
+    
+}
+
+.description-container{
+    text-align: center;
+    color: #FBFFFD;
+}
+
+.new-hero{ 
+    border:  1px red solid;
+    color: #FBFFFD;
+    display: grid;
+    font-weight: 300;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:    "name kind"
+    "date addPhoto"
+    "description power"
+    "description character";
+    padding: 15px 0 0 0;
+    width: 35vw;
+}
+
+.name-container{
+    grid-area: name;
+    
+}
+.kind-container{
+    grid-area: kind;
+}
+
+.kind-container label{
+    font-weight: 300;
+    margin: 0 0 5px 10px; 
+    
+}
+
+.date-container{
+    grid-area: date;
+}
+
+.add-photo{
+    grid-area: addPhoto;
+}
+
+.modifier-photo{
+    background-color: #fff;
+    color: #000;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+#photo{
+    opacity: 0;
+}
+
+.powers-container{
+    grid-area: power;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 50px;
+}
+
+.powers-container hr{
+    color: #CCC;
+    width: 250px;
+}
+
+
+#power-1, #power-2, #power-3, #power-4{
+    margin-right: 10px;
+}
+
+
+.new-character{
+    grid-area: character;
+    gap: 5px;
+}
+
+#description-input{
+    grid-area: description;
+}
+
+.name-container, .kind-container, .date-container, .add-photo{
+    display: flex;
+    color: #FBFFFD;
+    flex-direction: column;
+}
+
+
+.name-container label, .date-container label {
+    font-weight: 300;
+    margin: 0 0 5px 90px; 
+}
+
+
+#name-input, #date{
+    align-self: flex-end;
+}
+
+#name-input, #date, #kind, .modifier-photo{
+    border: none;
+    border-radius: 10px;
+    height: 2.5rem;
+    padding-left: 30px;
+    width: 75%;
+}
+
+.new-character{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+footer{
+    position: fixed;
+    background-color: #00669F;
+    bottom: 0;
+    color: #FFF9F9;
+    font-size: 1.2rem;
+    left: 0;
+    line-height: 3rem;
+    right: 0;
+    text-align: center;
+}
+
+
+
